@@ -1,27 +1,27 @@
 # wjw
 A library that contains require module,dom operated and event module,ajax and ajaxFile module,type judgement and some data process functions.
 > 
-require:
+###require:
 > 
 > 1,html:'\<script src="../lib/wjw.js" data-main="../lib/main.js" data-js="../js/r1.js"\>\</script\>';
 > 
 > 2,main.js:
 > 
     wjw.config([{
-    > > basePath:'../js/',
-    > > paths:{
-    > > > m1:'m1.js',
-    > > > m2:'m2.js',
-    > > > m3:'m3.js'
-    > > },
-    > > deps:{
-    > > m2:['m1'],
-    > > m3:['m1','m2']
-    > }
-    > },
-    > {
-    > > paths:{jquery:'../lib/jquery.js'}
-    > }
+      basePath:'../js/',
+      paths:{
+       m1:'m1.js',
+       m2:'m2.js',
+       m3:'m3.js'
+      },
+      deps:{
+      m2:['m1'],
+      m3:['m1','m2']
+     }
+     },
+     {
+      paths:{jquery:'../lib/jquery.js'}
+     }
     ]);
 > 
 > 3,r1.js:
@@ -36,7 +36,7 @@ require:
 > 
 > > m3:define('m3',['m1','m2'],function(m1,m2){});
 > 
-sDom:
+###sDom:
 > 
 > query:s('#id'),s('.class'),s('tag');
 > 
@@ -50,13 +50,13 @@ sDom:
     6,append(htmlString/dom/sDom);prepend(htmlString/dom/sDom);before(htmlString/dom/sDom);after(htmlString/dom/sDom);
     7,text()/text('text');html()/html(htmlString/dom/sDom);
 > 
-event:
+###event:
 > 
 > 1,on('type',handle);on('type1,type2',handle);
 > 
 > 2,off('type',handle);off('type1,type2',handle);
 > 
-ajax:
+###ajax:
 > 
 > 1,GET/POST:
 > 
@@ -88,12 +88,12 @@ ajax:
     > error:function(response){}
     });
 > 
-typeJudgement:
+###typeJudgement:
 > 
     (wjw.method(value)):isNull,isUndefined,isNot,isBlank,isNumeric,isNaN,isArrayLike,isString,isBoolean,isNumber,isDate,isArray,isFunction,isCN
     other:isDecimal(value,decimalDigits),isElement(element)
 > 
-dataProcess:
+###dataProcess:
 > 
     (wjw.method(value)):trim,makeArray,addArray,toHump,error,
     other:random(min,max),inArray(string,string)/inArray(array[i],array),each(array,function(i,obj){})/each(objs,function(key,obj){}),addScript(url);
