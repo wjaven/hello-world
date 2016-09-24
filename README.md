@@ -2,7 +2,7 @@
 A library that contains require module,dom operated and event module,ajax and ajaxFile module,type judgement and some data process functions.
 <br/>
 require:<br/>
-&nbsp;1,html:<script src="../lib/wjw.js" data-main="../lib/main.js" data-js="../js/r1.js" ></script>;<br/>
+&nbsp;1,html:'<script src="../lib/wjw.js" data-main="../lib/main.js" data-js="../js/r1.js" ></script>';<br/>
 &nbsp;2,main.js:<br/>
 &nbsp;&nbsp;wjw.config([{<br/>
 &nbsp;&nbsp;&nbsp;basePath:'../js/',<br/>
