@@ -3,7 +3,9 @@ A library that contains require module,dom operated and event module,ajax and aj
 > 
 ###require:
 > 
-> 1,html:'\<script src="../lib/wjw.js" data-main="../lib/main.js" data-js="../js/r1.js"\>\</script\>';
+> 1,html:
+> 
+    \<script src="../lib/wjw.js" data-main="../lib/main.js" data-js="../js/r1.js"\>\</script\>;
 > 
 > 2,main.js:
 > 
@@ -26,19 +28,19 @@ A library that contains require module,dom operated and event module,ajax and aj
 > 
 > 3,r1.js:
 > 
-> > require(['m1','m3','lib'],function(m11,m33,$){});
-> 
-> > or define(['m1','m3','lib'],function(m11,m33,$){});
+    require(['m1','m3','lib'],function(m11,m33,$){});
+    or define(['m1','m3','lib'],function(m11,m33,$){});
 > 
 > 4,define:
 > 
-> > m1:define('m1',function(){});
-> 
-> > m3:define('m3',['m1','m2'],function(m1,m2){});
+    m1:define('m1',function(){});
+    m3:define('m3',['m1','m2'],function(m1,m2){});
 > 
 ###sDom:
 > 
-> query:s('#id'),s('.class'),s('tag');
+> query:
+> 
+    s('#id'),s('.class'),s('tag');
 > 
 > methods(s(selector).method()):
 >
@@ -52,9 +54,8 @@ A library that contains require module,dom operated and event module,ajax and aj
 > 
 ###event:
 > 
-> 1,on('type',handle);on('type1,type2',handle);
-> 
-> 2,off('type',handle);off('type1,type2',handle);
+    1,on('type',handle);on('type1,type2',handle);
+    2,off('type',handle);off('type1,type2',handle);
 > 
 ###ajax:
 > 
@@ -90,10 +91,20 @@ A library that contains require module,dom operated and event module,ajax and aj
 > 
 ###typeJudgement:
 > 
-    (wjw.method(value)):isNull,isUndefined,isNot,isBlank,isNumeric,isNaN,isArrayLike,isString,isBoolean,isNumber,isDate,isArray,isFunction,isCN
-    other:isDecimal(value,decimalDigits),isElement(element)
+(wjw.method(value)):
+> 
+    isNull,isUndefined,isNot,isBlank,isNumeric,isNaN,isArrayLike,isString,isBoolean,isNumber,isDate,isArray,isFunction,isCN
+> 
+other:
+> 
+    isDecimal(value,decimalDigits),isElement(element)
 > 
 ###dataProcess:
 > 
-    (wjw.method(value)):trim,makeArray,addArray,toHump,error,
-    other:random(min,max),inArray(string,string)/inArray(array[i],array),each(array,function(i,obj){})/each(objs,function(key,obj){}),addScript(url);
+(wjw.method(value)):
+> 
+    trim,makeArray,addArray,toHump,error,
+> 
+other:
+> 
+    random(min,max),inArray(string,string)/inArray(array[i],array),each(array,function(i,obj){})/each(objs,function(key,obj){}),addScript(url);
