@@ -6,6 +6,7 @@ require:
 > 1,html:'\<script src="../lib/wjw.js" data-main="../lib/main.js" data-js="../js/r1.js"\>\</script\>';
 > 
 > 2,main.js:
+> 
     wjw.config([{
     basePath:'../js/',
     paths:{
@@ -40,6 +41,7 @@ sDom:
 > query:s('#id'),s('.class'),s('tag');
 > 
 > methods(s(selector).method()):
+>
     1,eq(i);first();last();prev();next();siblings();parent();closest(selector);children();find(selector);
     2,attr('data')/attr('data','1');removeAttr('data');
     3,hasClass('class');addClass('class');removeClass('class');
@@ -57,6 +59,7 @@ event:
 ajax:
 > 
 > 1,GET/POST:
+> 
     wjw.ajax({
     type:'GET/POST',
     url:'',
@@ -66,6 +69,7 @@ ajax:
     });
 > 
 > 2,jsonp:
+> 
     wjw.jsonp({
     url:'',
     data:jsonObj,
@@ -76,6 +80,7 @@ ajax:
     jsonp-php:$jsonpCallback=$_GET['jsonpCallback'];if($jsonpCallback){echo $jsonpCallback.'('.response.')';}
 > 
 > 3,simple file upload:
+> 
     wjw.ajaxFileUpload({
     inputId:'inputFile',
     url:'',
