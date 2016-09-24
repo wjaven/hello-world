@@ -8,20 +8,20 @@ require:
 > 2,main.js:
 > 
     wjw.config([{
-    basePath:'../js/',
-    paths:{
-    m1:'m1.js',
-    m2:'m2.js',
-    m3:'m3.js'
-    },
-    deps:{
-    m2:['m1'],
-    m3:['m1','m2']
-    }
-    },
-    {
-    paths:{jquery:'../lib/jquery.js'}
-    }
+    > > basePath:'../js/',
+    > > paths:{
+    > > > m1:'m1.js',
+    > > > m2:'m2.js',
+    > > > m3:'m3.js'
+    > > },
+    > > deps:{
+    > > m2:['m1'],
+    > > m3:['m1','m2']
+    > }
+    > },
+    > {
+    > > paths:{jquery:'../lib/jquery.js'}
+    > }
     ]);
 > 
 > 3,r1.js:
@@ -61,31 +61,31 @@ ajax:
 > 1,GET/POST:
 > 
     wjw.ajax({
-    type:'GET/POST',
-    url:'',
-    data:jsonObj,
-    success:function(response){},
-    error:function(response){}
+    > type:'GET/POST',
+    > url:'',
+    > data:jsonObj,
+    > success:function(response){},
+    > error:function(response){}
     });
 > 
 > 2,jsonp:
 > 
     wjw.jsonp({
-    url:'',
-    data:jsonObj,
-    overTime:100,
-    success:function(response){},
-    error:function(response){}
+    > url:'',
+    > data:jsonObj,
+    > overTime:100,
+    > success:function(response){},
+    > error:function(response){}
     });
     jsonp-php:$jsonpCallback=$_GET['jsonpCallback'];if($jsonpCallback){echo $jsonpCallback.'('.response.')';}
 > 
 > 3,simple file upload:
 > 
     wjw.ajaxFileUpload({
-    inputId:'inputFile',
-    url:'',
-    success:function(response){},
-    error:function(response){}
+    > inputId:'inputFile',
+    > url:'',
+    > success:function(response){},
+    > error:function(response){}
     });
 > 
 typeJudgement:
