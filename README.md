@@ -5,7 +5,7 @@ A library that contains require module,dom operated and event module,ajax and aj
 > 
 > 1,html:
 > 
-    \<script src="../lib/wjw.js" data-main="../lib/main.js" data-js="../js/r1.js"\>\</script\>;
+    <script src="../lib/wjw.js" data-main="../lib/main.js" data-js="../js/r1.js"></script>;
 > 
 > 2,main.js:
 > 
@@ -108,3 +108,8 @@ other:
 other:
 > 
     random(min,max),inArray(string,string)/inArray(array[i],array),each(array,function(i,obj){})/each(objs,function(key,obj){}),addScript(url);
+> 
+###noConflict
+> 
+    var m=noConflict();m.isNull(value);
+    var $=m.noConflictS();$('#id');
