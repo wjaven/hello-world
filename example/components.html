@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>wjw-UI-components</title>
+    <link rel="stylesheet" href="../lib/wjw-ui.css">
+    <style>
+        .set>div{float:left;width:140px;margin-bottom:10px;}
+    </style>
+</head>
+<body>
+<h3 class="p16-l line32 bgc-cyan fc-f f-18">button</h3>
+<div class="p16-all text-right set clearfix">
+    <div>btn:<button class="btn">按钮</button></div>
+    <div>btn-skin:<button class="btn btn-skin">按钮</button></div>
+    <div>btn-white:<button class="btn btn-white">按钮</button></div>
+    <div>btn-red:<button class="btn btn-red">按钮</button></div>
+    <div>btn-pink:<button class="btn btn-pink">按钮</button></div>
+    <div>btn-purple:<button class="btn btn-purple">按钮</button></div>
+    <div>btn-indigo:<button class="btn btn-indigo">按钮</button></div>
+    <div>btn-blue:<button class="btn btn-blue">按钮</button></div>
+    <div>btn-cyan:<button class="btn btn-cyan">按钮</button></div>
+    <div>btn-teal:<button class="btn btn-teal">按钮</button></div>
+    <div>btn-green:<button class="btn btn-green">按钮</button></div>
+    <div>btn-lime:<button class="btn btn-lime">按钮</button></div>
+    <div>btn-yellow:<button class="btn btn-yellow">按钮</button></div>
+    <div>btn-orange:<button class="btn btn-orange">按钮</button></div>
+    <div>btn-dorange:<button class="btn btn-dorange">按钮</button></div>
+    <div>btn-brown:<button class="btn btn-brown">按钮</button></div>
+    <div>btn-grey:<button class="btn btn-grey">按钮</button></div>
+</div>
+<h3 class="p16-l line32 bgc-cyan fc-f f-18">input[text]</h3>
+<div class="p16-all">
+    <div class="inpt">
+        <input type="text" placeholder="inpt" />
+        <div><hr/><hr/></div>
+    </div>
+    <div class="inpt inpt-cyan">
+        <input type="text" placeholder="inpt-cyan" />
+        <div><hr/><hr/></div>
+    </div>
+</div>
+<h3 class="p16-l line32 bgc-cyan fc-f f-18">input[checkbox]toggle</h3>
+<div class="p16-all text-right set clearfix">
+    <div>
+        tog:
+        <div class="tog tog-cyan">
+            <input type="checkbox">
+            <label></label>
+        </div>
+    </div>
+    <div>
+        disabled:
+        <div class="tog">
+            <input type="checkbox" disabled="disabled">
+            <label></label>
+        </div>
+    </div>
+</div>
+<h3 class="p16-l line32 bgc-cyan fc-f f-18">input[checkbox]</h3>
+<div class="p16-all text-right set clearfix">
+    <div>
+        chex:
+        <div class="chex">
+            <input type="checkbox"/>
+            <label></label>
+        </div>
+    </div>
+    <div>
+        disabled:
+        <div class="chex">
+            <input type="checkbox" disabled="disabled"/>
+            <label></label>
+        </div>
+    </div>
+    <div>
+        chex-cyan:
+        <div class="chex chex-cyan">
+            <input type="checkbox"/>
+            <label></label>
+        </div>
+    </div>
+</div>
+<h3 class="p16-l line32 bgc-cyan fc-f f-18">input[radio]</h3>
+<div class="p16-all text-right set clearfix">
+    <div>
+        radio:
+        <div class="rado">
+            <input type="radio" name="radio"/>
+            <label></label>
+        </div>
+    </div>
+    <div>
+        disable:
+        <div class="rado">
+            <input type="radio" disabled="disabled" name="radio"/>
+            <label></label>
+        </div>
+    </div>
+    <div>
+        rado-cyan:
+        <div class="rado rado-cyan">
+            <input type="radio" name="radio"/>
+            <label></label>
+        </div>
+    </div>
+</div>
+<h3 class="p16-l line32 bgc-cyan fc-f f-18">item</h3>
+<div>
+    <div class="item">
+        <input type="checkbox">
+        <div>
+            <h5>item1<i class="fa fa-angle-down"></i></h5>
+            <ul>
+                <li>btn</li>
+                <li>text</li>
+            </ul>
+        </div>
+    </div>
+    <div class="item item-cyan">
+        <input type="checkbox">
+        <div>
+            <h5>item1<i class="fa fa-angle-down"></i></h5>
+            <ul>
+                <li>btn</li>
+                <li>text</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<h3 class="p16-l line32 bgc-cyan fc-f f-18">select</h3>
+<div style="padding-bottom:100px;">
+    <div class="selt">
+        <div>value</div>
+        <i class="fa fa-sort-down"></i>
+        <input type="text" readonly="readonly">
+        <ul>
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+        </ul>
+    </div>
+    <div class="selt selt-cyan">
+        <div>value</div>
+        <i class="fa fa-sort-down"></i>
+        <input type="text" readonly="readonly">
+        <ul>
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+            <li>444</li>
+        </ul>
+    </div>
+</div>
+<h3 class="p16-l line32 bgc-cyan fc-f f-18">popselt</h3>
+<div class="m16-l">
+    <div id="popselt1" class="popselt">
+        <div>下拉弹窗</div>
+        <i class="fa fa-sort-down"></i>
+    </div>
+    <div id="popselt2" class="ml popselt popselt-cyan">
+        <div>下拉弹窗</div>
+        <i class="fa fa-sort-down"></i>
+    </div>
+</div>
+<script src="../lib/wjw-ui.js"></script>
+<script>
+    //下拉框
+    wjwUI.seltInit();
+    //下拉弹窗
+    var popselt1=document.querySelector("#popselt1");
+    var popselt1Data=["option0","option1","option2"];
+    wjwUI.popseltShow(popselt1,popselt1Data);
+    var popselt2=document.querySelector("#popselt2");
+    var popselt2Data=["option0option0","option1","option2","option3"];
+    wjwUI.popseltShow(popselt2,popselt2Data);
+</script>
+</body>
+</html>
