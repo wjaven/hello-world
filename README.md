@@ -1,5 +1,5 @@
 # wjw
-A library that contains require module,dom operated and event module,ajax and ajaxFile module,type judgement and some data process functions.
+A library that contains require module,dom operated and event module,ajax and ajaxFile module,extend module,type judgement and some data process functions.
 > 
 ###require:
 > 
@@ -78,7 +78,7 @@ A library that contains require module,dom operated and event module,ajax and aj
         success:function(response){},
         error:function(response){}
     });
-    jsonp-php:$jsonpCallback=$_GET['jsonpCallback'];if($jsonpCallback){echo $jsonpCallback.'('.response.')';}
+    jsonp-php:$jsonpCallback=$_GET['jsonpCallback'];if($jsonpCallback){echo $jsonpCallback.'('.$response.')';}
 > 
 > 3,simple file upload:
 > 
@@ -113,3 +113,9 @@ other:
 > 
     var m=noConflict();m.isNull(value);
     var $=m.noConflictS();$('#id');
+> 
+###extend
+> 
+    wjw.extend({fun:function(){}});wjw.fun();
+    wjw.fn.extend({fun:function(){}});s('#id').fun();
+> 
